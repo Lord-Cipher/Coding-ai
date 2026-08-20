@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin — Ghostware AI</title>
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-head">
+    <a href="index.html" style="display:flex;align-items:center;gap:.5rem">
+      <img src="assets/logo.png" width="36" height="36" style="border-radius:8px;object-fit:cover" alt="Ghostware">
+      <div class="logo-wm"><span style="color:var(--fg)">Ghost</span><span class="brand-text">ware</span><sup class="brand-text">AI</sup><small>Think · Build · Create</small></div>
+    </a>
+  </div>
+  <a href="index.html" class="new-chat"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>New Chat</a>
+  <nav class="nav">
+    <div class="nav-group"><div class="nav-label">AI</div><a href="index.html" class="nav-item "><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span>Chat</span></a><a href="code.html" class="nav-item "><svg class="icon" style="color:var(--cyan)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg><span>Coding Assistant</span><span class="badge-core brand-text">Core</span></a><a href="tools.html" class="nav-item "><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5z"/></svg><span>AI Tools Hub</span></a></div><div class="nav-group"><div class="nav-label">Account</div><a href="dashboard.html" class="nav-item "><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg><span>Dashboard</span></a><a href="subscription.html" class="nav-item "><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg><span>Subscription</span></a><a href="profile.html" class="nav-item "><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Profile</span></a><a href="settings.html" class="nav-item "><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg><span>Settings</span></a></div><div class="nav-group"><div class="nav-label">System</div><a href="admin.html" class="nav-item active"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Admin</span></a></div>
+    <div class="nav-group">
+      <div class="nav-label">Recent</div>
+      <div class="recent"><a href="index.html">Refactor auth middleware</a><a href="index.html">Design system tokens</a><a href="index.html">Postgres query optimization</a><a href="index.html">Landing page copy</a><a href="index.html">Stripe webhook handler</a></div>
+    </div>
+  </nav>
+  <div class="sidebar-foot">
+    <a href="profile.html" class="profile">
+      <div class="avatar">AX</div>
+      <div style="min-width:0;flex:1">
+        <div class="profile-name">Alex Carter</div>
+        <div class="profile-sub brand-text">Ghostware Pro</div>
+      </div>
+    </a>
+  </div>
+</aside>
+<div id="overlay" onclick="toggleSidebar()" style="display:none;position:fixed;inset:0;z-index:30;background:rgba(0,0,0,.6);backdrop-filter:blur(4px)"></div>
+
+  <div class="main">
+    
+<header class="topbar">
+  <button class="menu-btn" onclick="toggleSidebar()"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+  <div class="search"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input placeholder="Search chats, code, tools…"><span class="kbd">⌘K</span></div>
+  <div class="status" style="margin-left:auto"><span class="dot"></span>All systems normal</div>
+</header>
+
+    <div class="content" style="">
+      
+<div class="container">
+  <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1.5rem">
+    <div style="width:40px;height:40px;border-radius:.75rem;display:grid;place-items:center;color:#0a0a16" class="brand-grad"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+    <div><h1 class="font-display" style="font-size:1.5rem;font-weight:700;margin:0">Admin Console</h1><p class="muted" style="font-size:12px;margin:0">Internal analytics · restricted access</p></div>
+  </div>
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(160px,1fr))">
+<div class="card"><div style="display:flex;align-items:center;justify-content:space-between"><span style="color:var(--muted-fg)"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span style="font-size:10px;color:#4ade80;font-weight:600">+12.4%</span></div><div class="font-display" style="font-size:1.5rem;font-weight:700;margin-top:.75rem">48,219</div><div class="muted" style="font-size:12px">Total users</div></div>
+<div class="card"><div style="display:flex;align-items:center;justify-content:space-between"><span style="color:var(--muted-fg)"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span><span style="font-size:10px;color:#4ade80;font-weight:600">+8.2%</span></div><div class="font-display" style="font-size:1.5rem;font-weight:700;margin-top:.75rem">$284,930</div><div class="muted" style="font-size:12px">MRR</div></div>
+<div class="card"><div style="display:flex;align-items:center;justify-content:space-between"><span style="color:var(--muted-fg)"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6" y2="6"/><line x1="6" y1="18" x2="6" y2="18"/></svg></span><span style="font-size:10px;color:#4ade80;font-weight:600">30d</span></div><div class="font-display" style="font-size:1.5rem;font-weight:700;margin-top:.75rem">99.98%</div><div class="muted" style="font-size:12px">API uptime</div></div>
+<div class="card"><div style="display:flex;align-items:center;justify-content:space-between"><span style="color:var(--muted-fg)"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></span><span style="font-size:10px;color:#4ade80;font-weight:600">+3.1%</span></div><div class="font-display" style="font-size:1.5rem;font-weight:700;margin-top:.75rem">9,418</div><div class="muted" style="font-size:12px">Active subs</div></div></div>
+  <div class="grid" style="grid-template-columns:2fr 1fr;margin-top:1.5rem">
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;margin-bottom:.75rem"><div style="font-size:14px;font-weight:600">Revenue (last 12 weeks)</div><div class="muted" style="font-size:12px">USD</div></div>
+      <div style="display:flex;align-items:flex-end;gap:.5rem;height:160px"><div style="flex:1;border-radius:6px 6px 0 0;height:42.10526315789473%" class="brand-grad"></div><div style="flex:1;border-radius:6px 6px 0 0;height:49.122807017543856%" class="brand-grad"></div><div style="flex:1;border-radius:6px 6px 0 0;height:46.31578947368421%" class="brand-grad"></div><div style="flex:1;border-radius:6px 6px 0 0;height:59.64912280701754%" class="brand-grad"></div><div style="flex:1;border-radius:6px 6px 0 0;height:54.385964912280706%" class="brand-grad"></div><div style="flex:1;border-radius:6px 6px 0 0;height:66.66666666666666%" class="brand-grad"></div><div style="flex:1;border-radius:6px 6px 0 0;height:73.68421052631578%" class="brand-grad"></div><div style="flex:1;border-radius:6px 6px 0 0;height:69.47368421052632%" class="brand-grad"></div><div style="flex:1;border-radius:6px 6px 0 0;height:80.7017543859649%" class="brand-grad"></div><div style="flex:1;border-radius:6px 6px 0 0;height:85.96491228070175%" class="brand-grad"></div><div style="flex:1;border-radius:6px 6px 0 0;height:94.03508771929825%" class="brand-grad"></div><div style="flex:1;border-radius:6px 6px 0 0;height:100.0%" class="brand-grad"></div></div>
+    </div>
+    <div class="card">
+      <div style="font-size:14px;font-weight:600;margin-bottom:.75rem">System monitoring</div>
+      <ul style="margin:0;padding:0;list-style:none"><li style="display:flex;align-items:center;justify-content:space-between;font-size:14px;padding:.25rem 0"><div style="display:flex;align-items:center;gap:.5rem"><svg class="icon" style="color:#4ade80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>API Gateway</span></div><span class="font-mono" style="font-size:12px;color:var(--muted-fg)">42ms</span></li><li style="display:flex;align-items:center;justify-content:space-between;font-size:14px;padding:.25rem 0"><div style="display:flex;align-items:center;gap:.5rem"><svg class="icon" style="color:#4ade80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Inference · Ghost-X</span></div><span class="font-mono" style="font-size:12px;color:var(--muted-fg)">318ms</span></li><li style="display:flex;align-items:center;justify-content:space-between;font-size:14px;padding:.25rem 0"><div style="display:flex;align-items:center;gap:.5rem"><svg class="icon" style="color:#4ade80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Inference · Coder</span></div><span class="font-mono" style="font-size:12px;color:var(--muted-fg)">210ms</span></li><li style="display:flex;align-items:center;justify-content:space-between;font-size:14px;padding:.25rem 0"><div style="display:flex;align-items:center;gap:.5rem"><svg class="icon" style="color:#fbbf24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12" y2="17"/></svg><span>Image pipeline</span></div><span class="font-mono" style="font-size:12px;color:var(--muted-fg)">1.4s</span></li><li style="display:flex;align-items:center;justify-content:space-between;font-size:14px;padding:.25rem 0"><div style="display:flex;align-items:center;gap:.5rem"><svg class="icon" style="color:#4ade80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Billing</span></div><span class="font-mono" style="font-size:12px;color:var(--muted-fg)">89ms</span></li><li style="display:flex;align-items:center;justify-content:space-between;font-size:14px;padding:.25rem 0"><div style="display:flex;align-items:center;gap:.5rem"><svg class="icon" style="color:#4ade80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Auth</span></div><span class="font-mono" style="font-size:12px;color:var(--muted-fg)">31ms</span></li></ul>
+    </div>
+  </div>
+  <div class="card" style="margin-top:1.5rem;padding:0">
+    <div style="display:flex;justify-content:space-between;align-items:center;padding:1rem;border-bottom:1px solid var(--border)">
+      <div style="font-size:14px;font-weight:600">Subscription management</div>
+      <div style="display:flex;gap:4px;font-size:12px"><button class="btn" style="padding:4px 8px">All</button><button class="btn" style="padding:4px 8px;background:transparent;border:0;color:var(--muted-fg)">Pro</button><button class="btn" style="padding:4px 8px;background:transparent;border:0;color:var(--muted-fg)">Enterprise</button></div>
+    </div>
+    <div style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;font-size:14px">
+        <thead><tr style="text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted-fg)"><th style="padding:12px">User</th><th style="padding:12px">Plan</th><th style="padding:12px">Monthly</th><th style="padding:12px">Status</th><th></th></tr></thead>
+        <tbody>
+<tr style="border-top:1px solid var(--border)">
+  <td style="padding:12px"><div style="font-weight:500">Maya Chen</div><div style="font-size:12px;color:var(--muted-fg)">maya@acme.io</div></td>
+  <td style="padding:12px"><span style="border:1px solid var(--border);padding:2px 8px;border-radius:6px;font-size:12px">Enterprise</span></td>
+  <td style="padding:12px;font-family:'JetBrains Mono',monospace;font-size:12px">$1,240</td>
+  <td style="padding:12px"><span style="background:color-mix(in oklab,#4ade80 10%,transparent);color:#4ade80;padding:2px 8px;border-radius:6px;font-size:12px">active</span></td>
+  <td style="padding:12px;text-align:right"><button class="btn" style="padding:0;background:transparent;border:0;color:var(--muted-fg);font-size:12px">Manage</button></td>
+</tr>
+<tr style="border-top:1px solid var(--border)">
+  <td style="padding:12px"><div style="font-weight:500">Jordan Reed</div><div style="font-size:12px;color:var(--muted-fg)">jordan@studio.dev</div></td>
+  <td style="padding:12px"><span style="border:1px solid var(--border);padding:2px 8px;border-radius:6px;font-size:12px">Pro</span></td>
+  <td style="padding:12px;font-family:'JetBrains Mono',monospace;font-size:12px">$89</td>
+  <td style="padding:12px"><span style="background:color-mix(in oklab,#4ade80 10%,transparent);color:#4ade80;padding:2px 8px;border-radius:6px;font-size:12px">active</span></td>
+  <td style="padding:12px;text-align:right"><button class="btn" style="padding:0;background:transparent;border:0;color:var(--muted-fg);font-size:12px">Manage</button></td>
+</tr>
+<tr style="border-top:1px solid var(--border)">
+  <td style="padding:12px"><div style="font-weight:500">Sam Patel</div><div style="font-size:12px;color:var(--muted-fg)">sam@labs.ai</div></td>
+  <td style="padding:12px"><span style="border:1px solid var(--border);padding:2px 8px;border-radius:6px;font-size:12px">Pro</span></td>
+  <td style="padding:12px;font-family:'JetBrains Mono',monospace;font-size:12px">$89</td>
+  <td style="padding:12px"><span style="background:color-mix(in oklab,oklch(0.82 0.16 215) 10%,transparent);color:oklch(0.82 0.16 215);padding:2px 8px;border-radius:6px;font-size:12px">trialing</span></td>
+  <td style="padding:12px;text-align:right"><button class="btn" style="padding:0;background:transparent;border:0;color:var(--muted-fg);font-size:12px">Manage</button></td>
+</tr>
+<tr style="border-top:1px solid var(--border)">
+  <td style="padding:12px"><div style="font-weight:500">Lina Park</div><div style="font-size:12px;color:var(--muted-fg)">lina@northstar.co</div></td>
+  <td style="padding:12px"><span style="border:1px solid var(--border);padding:2px 8px;border-radius:6px;font-size:12px">Team</span></td>
+  <td style="padding:12px;font-family:'JetBrains Mono',monospace;font-size:12px">$420</td>
+  <td style="padding:12px"><span style="background:color-mix(in oklab,#4ade80 10%,transparent);color:#4ade80;padding:2px 8px;border-radius:6px;font-size:12px">active</span></td>
+  <td style="padding:12px;text-align:right"><button class="btn" style="padding:0;background:transparent;border:0;color:var(--muted-fg);font-size:12px">Manage</button></td>
+</tr>
+<tr style="border-top:1px solid var(--border)">
+  <td style="padding:12px"><div style="font-weight:500">Diego Ortiz</div><div style="font-size:12px;color:var(--muted-fg)">diego@helix.app</div></td>
+  <td style="padding:12px"><span style="border:1px solid var(--border);padding:2px 8px;border-radius:6px;font-size:12px">Free</span></td>
+  <td style="padding:12px;font-family:'JetBrains Mono',monospace;font-size:12px">$0</td>
+  <td style="padding:12px"><span style="background:color-mix(in oklab,#4ade80 10%,transparent);color:#4ade80;padding:2px 8px;border-radius:6px;font-size:12px">active</span></td>
+  <td style="padding:12px;text-align:right"><button class="btn" style="padding:0;background:transparent;border:0;color:var(--muted-fg);font-size:12px">Manage</button></td>
+</tr>
+<tr style="border-top:1px solid var(--border)">
+  <td style="padding:12px"><div style="font-weight:500">Priya Singh</div><div style="font-size:12px;color:var(--muted-fg)">priya@kite.io</div></td>
+  <td style="padding:12px"><span style="border:1px solid var(--border);padding:2px 8px;border-radius:6px;font-size:12px">Pro</span></td>
+  <td style="padding:12px;font-family:'JetBrains Mono',monospace;font-size:12px">$89</td>
+  <td style="padding:12px"><span style="background:color-mix(in oklab,#f87171 10%,transparent);color:#f87171;padding:2px 8px;border-radius:6px;font-size:12px">past_due</span></td>
+  <td style="padding:12px;text-align:right"><button class="btn" style="padding:0;background:transparent;border:0;color:var(--muted-fg);font-size:12px">Manage</button></td>
+</tr></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+<script>
+function toggleSidebar(){
+  const s=document.getElementById('sidebar'),o=document.getElementById('overlay');
+  s.classList.toggle('open');
+  o.style.display=s.classList.contains('open')?'block':'none';
+}
+</script>
+</body>
+</html>
